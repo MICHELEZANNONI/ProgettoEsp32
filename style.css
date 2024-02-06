@@ -1,0 +1,47 @@
+.titolo {
+  text-align: center;
+}
+
+label {
+
+  margin: 0 auto;
+}
+
+li {
+  display: inline-flex;
+}
+
+img {
+  width: 3%;
+  float: right;
+  margin-top: 0.5%;
+  padding-right: 26%;
+}
+
+.inserimento {
+  background-color: #ffffff;
+  border: solid 3px;
+  border-color: #00ffc8;
+  background-image: url("polaretti.jpg");
+}
+
+.tabella {
+  background-color: #ffffff;
+  border: solid 4px;
+  border-color: #00ffc8;
+}
+
+select {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+table, td, tr{
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+table {
+  width: 100%;
+  text-align: center;
+
+}
