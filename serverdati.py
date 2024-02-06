@@ -19,7 +19,7 @@ def index():
     data = leggi_da_file()
 
     response = app.response_class(
-        response=dati,
+        response=json.dumps(dati),,
         mimetype='application/json'
     )
     response.headers.add("Access-Control-Allow-Origin", "*")
