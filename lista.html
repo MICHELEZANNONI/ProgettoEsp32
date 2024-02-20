@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-<html>
+    <html>
 
-<head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Misurazioni</title>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Misurazioni</title>
 
-</head>
+    </head>
 
 <body>
-    <div class="titolo">
-        <h1>Misurazioni</h1>
-    </div>
-    <div class="inserimento">
-        <img src="./img/sium.jpg" alt="temp">
+    <h1>Misurazioni</h1>
+    <div id="inserimento" back>
 
         <ul>
-            <li>
+            <li class = "select">
                 <form action="#">
                     <label for="lang">Intervallo di tempo</label>
                     <select name="languages" id="lang">
@@ -24,10 +21,10 @@
                         <option value="Ultimo mese">Ultimo mese</option>
                         <option value="Ultimo anno">Ultimo anno</option>
                     </select>
-                    <input type="submit" value="Submit" />
                 </form>
             </li>
-            <li>
+
+            <li class = "select">
                 <form action="#">
                     <label for="lang">Intervallo di temperatura</label>
                     <select name="languages" id="lang">
@@ -37,10 +34,10 @@
                         <option value="Ultimo anno">minore di 20</option>
                         <option value="Ultimo anno">minore di 25</option>
                     </select>
-                    <input type="submit" value="Submit" />
                 </form>
             </li>
-            <li>
+
+            <li class = "select">
                 <form action="#">
                     <label for="lang">Cerca per Aula</label>
                     <select name="languages" id="lang">
@@ -50,20 +47,21 @@
                         <option value="4">minore di 20</option>
                         <option value="5">minore di 25</option>
                     </select>
-                    <input type="submit" value="Submit" />
+                  
                 </form>
             </li>
-            <li>
+
+            <li class = "select">
                 <form action="#">
                     <label for="lang">Cerca per data</label>
                     </select>
                     <input type="date" value="date" />
                 </form>
-
-
             </li>
 
+            <input type = "submit" id = "submit" value="Submit" />
         </ul>
+
     </div>
     <div id="result">
     </div>
