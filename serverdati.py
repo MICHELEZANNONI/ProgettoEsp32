@@ -1,6 +1,8 @@
-from flask import Flask,request,import datetime as dt,  make_response
+from flask import Flask,request,  make_response
+import datetime as dt
 import csv
 import json
+import time
 
 
 app = Flask(__name__)
@@ -38,11 +40,17 @@ def add():
 
     aula = query_parameters.get("aula")
     valore = query_parameters.get("valore")
+    current_date = dt.date.today()
+    current_time = time.strftime("%H:%M", time.localtime())
     
     #scrivi i dati su file
 
     f = open("dati.csv","a")
-    f.write("\n10")
-    f.write(aula: ",")
-    f.write(valore)
+    f.write("\n10,")
+    f.write(aula+ ",")
+    f.write(str(current_date)+ ",")
+    f.write(str(current_time)+ ",")
+    f.write(valore+ ",")
     f.close()
+
+    return json.dumps({'success':True}), 200, {'ContentType':'application/json'}
