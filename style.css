@@ -8,6 +8,8 @@ body {
   background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
   background-attachment: fixed; /* Fissa l'immagine di sfondo */
 }
+
+
         
 #inserimento {
   border: solid 3px;
@@ -27,12 +29,42 @@ body {
 
 }
 
-#submit {
+button {
   float: right;
   margin-right: 7%;
+  font-size: 16px; 
+  
 }
+
 
 li {
   display: inline-flex;
 }
 
+table {
+  border-top: 2%;
+  padding: 1%;
+  width: 100%;
+  max-width: 100%; 
+  overflow-x: auto; 
+  border-collapse: collapse; 
+  table-layout: fixed; 
+  text-align: center;
+ 
+
+
+}
+
+#table1{
+  margin-inline-start: auto;
+  margin-block-start: auto;
+  margin-top: 3%;
+  border: 2px solid black;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 1%; 
+  text-align: left; 
+  word-wrap: break-word; 
+}
