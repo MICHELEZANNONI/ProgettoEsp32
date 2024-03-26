@@ -9,19 +9,6 @@ const misure = [
 
 ]
 
-/*function fetchElenco() {
-    let url = "http://localhost:5000";
-    fetch(url)
-    .then(response => response.json())
-    .then(data =>  {
-        misure = data;
-        // ShowTabella
-        console.log(misure)
-      });
-  }
- 
-fetchElenco();
-        */
 const misureConvertite = [
 ] 
 function conversione(String) {
@@ -45,7 +32,9 @@ let r = 10;
 function creatabella(c, r) {
     let table = document.createElement("table");
     for (let i = 0; i < c; i++) {
-        let tr = document.createElement("tr");      
+        let tr = docume
+ 
+        fetchElenco();nt.createElement("tr");      
         for (let j = 0; j < r; j++) {
             let td = document.createElement("td");    
             td.append(misure[i].id);
@@ -67,6 +56,8 @@ function creatabella(c, r) {
 tabellacreata = creatabella(r, c);
 
 var misurazioni=[]
+ 
+fetchElenco();
 
 
 //SERVER
@@ -87,7 +78,7 @@ function fetchElenco() {
           }
          
         fetchElenco();
-        data;
+        data;   
         // ShowTabella
         console.log(misure)
       });
