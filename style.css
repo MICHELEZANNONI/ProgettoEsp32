@@ -50,8 +50,8 @@ table {
   border-collapse: collapse; 
   table-layout: fixed; 
   text-align: center;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
@@ -60,8 +60,8 @@ table {
   margin-block-start: auto;
   margin-top: 3%;
   border: 2px solid black;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
@@ -70,4 +70,13 @@ th, td {
   padding: 1%; 
   text-align: center; 
   word-wrap: break-word; 
+}
+
+footer{
+  background-color: rgb(36, 34, 34);
+  color: rgb(236, 226, 226);
+  font-size: 15px;
+  padding: 1%;
+  text-align: center;
+  display: block;
 }
