@@ -7,87 +7,21 @@ const result = document.querySelector("#result");
 
 const misure = [
 
-    {
-        id: 1,
-        valore: 20,
-        aula: "MM1",
-        giorno: "2024/07/04",
-        ora: "11.00"
-    },
-
-    {
-        id: 2,
-        valore: 18,
-        aula: "MM1",
-        giorno: "2024/01/30",
-        ora: "10.00"
-    },
-
-    {
-        id: 3,
-        valore: 19,
-        aula: "MM1",
-        giorno: "2024/01/30",
-        ora: "10.30"
-    },
-
-    {
-        id: 4,
-        valore: 16,
-        aula: "MM1",
-        giorno: "2024/01/30",
-        ora: "9.00"
-    },
-
-    {
-        id: 5,
-        valore: 17,
-        aula: "MM1",
-        giorno: "2024/01/30",
-        ora: "8.40"
-    },
-
-    {
-        id: 6,
-        valore: 20.5,
-        aula: "MM1",
-        giorno: "2024/01/30",
-        ora: "10.10"
-    },
-
-    {
-        id: 7,
-        valore: 17.5,
-        aula: "MM1",
-        giorno: "2024/01/30",
-        ora: "13.00"
-    },
-
-    {
-        id: 8,
-        valore: 21,
-        aula: "MM1",
-        giorno: "2024/01/30",
-        ora: "14.00"
-    },
-
-    {
-        id: 9,
-        valore: 18.5,
-        aula: "MM1",
-        giorno: "2024/01/30",
-        ora: "11.45"
-    },
-
-    {
-        id: 10,
-        valore: 22,
-        aula: "MM1",
-        giorno: "2024-01-30T22:10",
-        ora: "12.00"
-    }
 ]
-        
+
+/*function fetchElenco() {
+    let url = "http://localhost:5000";
+    fetch(url)
+    .then(response => response.json())
+    .then(data =>  {
+        misure = data;
+        // ShowTabella
+        console.log(misure)
+      });
+  }
+ 
+fetchElenco();
+        */
 const misureConvertite = [
 ] 
 function conversione(String) {
@@ -141,7 +75,19 @@ function fetchElenco() {
     fetch(url)
     .then(response => response.json())
     .then(data =>  {
-        misure = data;
+        misure = function fetchElenco() {
+            let url = "http://localhost:5000";
+            fetch(url)
+            .then(response => response.json())
+            .then(data =>  {
+                misure = data;
+                // ShowTabella
+                console.log(misure)
+              });
+          }
+         
+        fetchElenco();
+        data;
         // ShowTabella
         console.log(misure)
       });
